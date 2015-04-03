@@ -57,6 +57,9 @@ class CallTrace {
 		// create error message
 		if ($this->code instanceof \Exception) {
 			$err = get_class($this->code);
+			if ($c = $this->code->getCode()) {
+				$err .= "[$c]";
+			}
 		} else {
 			if (isset(self::$PHP_ERROR_TYPES[$this->code])) {
 				$err = self::$PHP_ERROR_TYPES[$this->code];
