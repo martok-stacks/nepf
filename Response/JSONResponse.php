@@ -9,6 +9,7 @@ class JSONResponse extends AbstractResponse{
 	}
 
 	public function sendHeaders() {
+		header('Content-Type: text/json');
 	}
 
 	public function sendData(){
