@@ -21,7 +21,8 @@ class Kernel extends Singleton{
 		$this->environment = $env;
 		$this->resources = $resourceFolder;
 		$this->config = array(
-			'database' => null
+			'database' => null,
+			'root' => dirname($_SERVER['PHP_SELF'])
 		);
 		ErrorHandler::Register($env == Kernel::ModeDebug);
 	}
@@ -34,11 +35,16 @@ class Kernel extends Singleton{
 		return $this->resources;
 	}
 
+	public function getWebRoot() {
+		return $this->config['root'];
+	}
+
 	public function setup($config = array())
 	{
-		$this->request = new Request();
 		$this->config = array_merge($this->config, $config);
 		$this->db = $this->getOpt('database');
+
+		$this->request = new Request();
 	}
 
 	public function registerActionGroup($prefix, $class)

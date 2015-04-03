@@ -26,7 +26,7 @@ class Request extends Singleton{
 	private function getCalledURI()
 	{
 		$uri = $_SERVER['REQUEST_URI'];
-		$scr = $_SERVER['SCRIPT_NAME'];
+		$scr = Kernel::getInstance()->getWebRoot();
 		if (0 === strncmp($uri, $scr, strlen($scr))) {
 			$uri = substr($uri, strlen($scr));
 		}
