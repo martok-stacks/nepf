@@ -39,6 +39,11 @@ class Kernel extends Singleton{
 		return $this->config['root'];
 	}
 
+	public function getRootURL() {
+		$https = isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] !== 'off');
+		return ($https?'https':'http').'://' . $_SERVER['SERVER_NAME'] . $this->getWebRoot();
+	}
+
 	public function setup($config = array())
 	{
 		$this->config = array_merge($this->config, $config);
