@@ -1,5 +1,5 @@
 <?php
-namespace Framework\Response;
+namespace Nepf\Response;
 
 abstract class AbstractResponse{
 	abstract public function sendHeaders();

@@ -1,6 +1,6 @@
 <?php
-namespace Framework\System;
-use Framework\Kernel;
+namespace Nepf\System;
+use Nepf\Kernel;
 
 class ErrorHandler {
 	private static $debug = false;

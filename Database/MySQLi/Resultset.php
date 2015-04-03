@@ -1,7 +1,7 @@
 <?php
-namespace Framework\Database\MySQLi;
-use Framework\Database\Database;
-use Framework\Database\AbstractResultset;
+namespace Nepf\Database\MySQLi;
+use Nepf\Database\Database;
+use Nepf\Database\AbstractResultset;
 
 class Resultset extends AbstractResultset {
 	private $stmt;

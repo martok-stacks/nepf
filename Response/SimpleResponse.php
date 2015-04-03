@@ -1,5 +1,5 @@
 <?php
-namespace Framework\Response;
+namespace Nepf\Response;
 
 class SimpleResponse extends AbstractResponse{
 	private $headers = array();

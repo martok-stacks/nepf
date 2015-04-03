@@ -1,5 +1,5 @@
 <?php
-namespace Framework\Database;
+namespace Nepf\Database;
 
 abstract class AbstractResultset {
 	const AS_ASSOC = 0;

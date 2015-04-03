@@ -1,8 +1,8 @@
 <?php
-namespace Framework;
-use Framework\System\Singleton;
-use Framework\System\FrameworkException;
-use Framework\System\ErrorHandler;
+namespace Nepf;
+use Nepf\System\Singleton;
+use Nepf\System\FrameworkException;
+use Nepf\System\ErrorHandler;
 
 class Kernel extends Singleton{
 	const ModeProduction = 'prod';

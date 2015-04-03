@@ -1,6 +1,6 @@
 <?php
-namespace Framework\Response;
-use Framework\Template;
+namespace Nepf\Response;
+use Nepf\Template;
 
 class JSONResponse extends AbstractResponse{
 	private $data;

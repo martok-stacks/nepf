@@ -1,5 +1,5 @@
 <?php
-namespace Framework\Response;
+namespace Nepf\Response;
 
 class FileResponse extends AbstractResponse{
 	private $content;

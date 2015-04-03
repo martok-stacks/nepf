@@ -1,6 +1,6 @@
 <?php
-namespace Framework;
-use Framework\System\Singleton;
+namespace Nepf;
+use Nepf\System\Singleton;
 
 class Session extends Singleton{
 	public $hasSession;

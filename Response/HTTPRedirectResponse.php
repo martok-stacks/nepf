@@ -1,5 +1,5 @@
 <?php
-namespace Framework\Response;
+namespace Nepf\Response;
 
 class HTTPRedirectResponse extends AbstractResponse{
 	const MovedPermanently = 301;

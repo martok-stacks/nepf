@@ -1,5 +1,5 @@
 <?php
-namespace Framework\Database;
+namespace Nepf\Database;
 
 abstract class AbstractQuery {
 	function __construct(Database $db, $sql) {}

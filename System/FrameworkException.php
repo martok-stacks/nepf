@@ -1,5 +1,5 @@
 <?php
-namespace Framework\System;
+namespace Nepf\System;
 
 class FrameworkException extends \Exception{
 	function __construct($message){

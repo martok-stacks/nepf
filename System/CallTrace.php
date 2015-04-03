@@ -1,5 +1,5 @@
 <?php
-namespace Framework\System;
+namespace Nepf\System;
 
 class CallTrace {
 	private static $PHP_ERROR_TYPES = array (

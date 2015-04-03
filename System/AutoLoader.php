@@ -1,5 +1,5 @@
 <?php
-namespace Framework\System;
+namespace Nepf\System;
 
 define('NAMESPACE_SEPARATOR', '\\');
 class AutoLoader {

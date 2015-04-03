@@ -1,5 +1,5 @@
 <?php
-namespace Framework\System;
+namespace Nepf\System;
 
 class EnumIterator implements \Iterator{
 	private $defined;
@@ -7,14 +7,14 @@ class EnumIterator implements \Iterator{
 	function __construct($enumClass){
 		$this->defined = array();
 		$this->cursor = 0;
-		
+
 		$refl = new \ReflectionClass($enumClass);
 		$const = $refl->getConstants();
 		foreach ($const as $c => $v){
 			$this->defined[] = array($c, $v);
 		}
 	}
-	
+
 	function rewind() {
 		$this->cursor = 0;
 	}

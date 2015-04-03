@@ -1,6 +1,6 @@
 <?php
-namespace Framework\Database\MySQLi;
-use Framework\Database\Database;
+namespace Nepf\Database\MySQLi;
+use Nepf\Database\Database;
 
 class MySQLi extends Database {
 	public $connection;

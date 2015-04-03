@@ -1,5 +1,5 @@
 <?php
-namespace Framework;
+namespace Nepf;
 
 class Template {
 	private $file;

@@ -1,6 +1,6 @@
 <?php
-namespace Framework;
-use Framework\System\Singleton;
+namespace Nepf;
+use Nepf\System\Singleton;
 
 class Request extends Singleton{
 	private $object;
@@ -59,7 +59,7 @@ class Request extends Singleton{
 	public static function cleanse($value) {
 		return preg_replace('#[^_0-9a-zA-Z]#','',$value);
 	}
-	
+
 	public function getSession() {
 		$s = Session::getInstance();
 		return is_null($s)?(new Session($this)):$s;

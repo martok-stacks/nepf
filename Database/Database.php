@@ -1,6 +1,6 @@
 <?php
-namespace Framework\Database;
-use Framework\Kernel;
+namespace Nepf\Database;
+use Nepf\Kernel;
 
 abstract class Database {
 	function __construct($user, $password, $schema, $host=null) {}

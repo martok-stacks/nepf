@@ -1,5 +1,5 @@
 <?php
-namespace Framework\System;
+namespace Nepf\System;
 
 class Singleton {
 	private static $instance = array();

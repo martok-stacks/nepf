@@ -1,5 +1,5 @@
 <?php
-namespace Framework;
+namespace Nepf;
 
 class PageController {
 	private $kernel;

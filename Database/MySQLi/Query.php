@@ -1,7 +1,7 @@
 <?php
-namespace Framework\Database\MySQLi;
-use Framework\Database\Database;
-use Framework\Database\AbstractQuery;
+namespace Nepf\Database\MySQLi;
+use Nepf\Database\Database;
+use Nepf\Database\AbstractQuery;
 
 class Query extends AbstractQuery {
 	protected $db;
